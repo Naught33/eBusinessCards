@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magellan Group eBusinessCard™</title>
+    <link rel="shortcut icon" href="./assets/images/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="assets/js/ui.js" defer></script>
+    <script src="https://unpkg.com/share-api-polyfill/dist/share-min.js" defer></script>
+</head>
+<body>
+
+    <div class="controler bottomnavs">
+        <p id="flipFront">Front</p>
+        <p id="flipBack">Back</p>
+    </div>
+
+    <div class="container">
+
+    <!-- card body -->
+    <div id="card" class="card">
+        <!-- front of card -->
+        <div class="front">
+            <img class="underlay" src="./assets/images/logo.png" alt="logo">
+            <img class="emblem" src="./assets/images/logo.png" alt="logo">
+            <div class="company">
+                <h1>Magellan Group</h1>
+                <h3>Asia - Europe - Africa</h3>
+            </div>
+            <div class="lead right"><p>Mission</p></div>
+            <div class="lead center"><p>Products</p></div>
+            <div class="lead left"><p>Engagement</p></div>
+
+            <p class="float">Connecting Talents to Business & Opportunities</p>
+        </div>
+
+        <!-- back of card -->
+        <div class="back">
+            <img class="underlay" src="./assets/images/logo.png" alt="logo">
+            <div class="owner">
+                <h1>Owner's Name</h1>
+                <h3>Company Role | +111 000 000 000</h3>
+            </div>
+
+            <div class="card-btn-grp">
+                <button class="transparent-btn website"><ion-icon class="smaller rotated-icon" name="link"></ion-icon>Website</button>
+                <button class="transparent-btn email"><ion-icon class="smaller" name="mail"></ion-icon>Email</button>
+            </div>
+            <h3 class="float">Engagement</h3>
+            <div class="engagement-item top">
+                <ion-icon name="briefcase"></ion-icon>
+                <div class="info">
+                <h3>Patnerships for international Talent and Business Programs</h3>
+                <p>patners@magellanes.org</p>
+            </div> 
+            </div>
+            <div class="engagement-item">
+                <ion-icon name="business"></ion-icon>
+                <div class="info">
+                <h3>Ventures & Entreprenuers for Business Advisory & Business Services</h3>
+                <p>info@magellanes.org</p>
+                </div>
+            </div>
+            <div class="engagement-item bottom">
+                <ion-icon name="wallet"></ion-icon>
+                <div class="info">
+                <h3>Investor Network for Early Stage Investment Opportunities</h3>
+                <p>mfh.magellan@gmail.com</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div id="bottom-modal" class="bottom-modal">
+    <div id="modal-header" class="modal-header">
+        <ion-icon id="close-modal-bottom" name="close-circle"></ion-icon>
+        <h3 id="mission">Mission</h3>
+        <h3 id="products">Products</h3>
+    </div>
+    <div id="modal-body" class="modal-body">
+        Loading info...
+    </div>
+</div>
+
+<!-- <div id="errorlog">Message</div> -->
+
+    <div class="bottomnavs">
+            <div id="lightbtn" class="light" style="color: white;">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-sun" viewBox="0 0 16 16">
+                    <path d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6m0 1a4 4 0 1 0 0-8 4 4 0 0 0 0 8M8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0m0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13m8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5M3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8m10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0m-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0m9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707M4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708"/>
+                </svg>
+            </div>
+            <div id="darkbtn" class="dark">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-moon" viewBox="0 0 16 16">
+                    <path d="M6 .278a.77.77 0 0 1 .08.858 7.2 7.2 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277q.792-.001 1.533-.16a.79.79 0 0 1 .81.316.73.73 0 0 1-.031.893A8.35 8.35 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.75.75 0 0 1 6 .278M4.858 1.311A7.27 7.27 0 0 0 1.025 7.71c0 4.02 3.279 7.276 7.319 7.276a7.32 7.32 0 0 0 5.205-2.162q-.506.063-1.029.063c-4.61 0-8.343-3.714-8.343-8.29 0-1.167.242-2.278.681-3.286"/>
+                </svg>
+            </div>
+        <hr>
+        <div id="qrbtn" class="share">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-qr-code" viewBox="0 0 16 16">
+                <path d="M2 2h2v2H2z"/>
+                <path d="M6 0v6H0V0zM5 1H1v4h4zM4 12H2v2h2z"/>
+                <path d="M6 10v6H0v-6zm-5 1v4h4v-4zm11-9h2v2h-2z"/>
+                <path d="M10 0v6h6V0zm5 1v4h-4V1zM8 1V0h1v2H8v2H7V1zm0 5V4h1v2zM6 8V7h1V6h1v2h1V7h5v1h-4v1H7V8zm0 0v1H2V8H1v1H0V7h3v1zm10 1h-1V7h1zm-1 0h-1v2h2v-1h-1zm-4 0h2v1h-1v1h-1zm2 3v-1h-1v1h-1v1H9v1h3v-2zm0 0h3v1h-2v1h-1zm-4-1v1h1v-2H7v1z"/>
+                <path d="M7 12h1v3h4v1H7zm9 2v2h-3v-1h2v-1z"/>
+            </svg>
+        </div>
+    </div>
+
+    <div class="popup">
+        <div id="qrcode" class="imageHolder">
+            <p id="loader">
+                <span class="loader"></span>
+                Generating QR Code...
+            </p>
+        </div>
+        <div class="btngroup">
+            <button id="share">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-share" viewBox="0 0 16 16">
+                    <path d="M13.5 1a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3M11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.5 2.5 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5m-8.5 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3m11 5.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3"/>
+                </svg>
+                Share
+            </button>
+
+            <button id="close" class="cold">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
+                    <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708"/>
+                </svg>
+                Close
+            </button>
+        </div>
+    </div>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
